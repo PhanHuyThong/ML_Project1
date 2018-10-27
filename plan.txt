@@ -1,6 +1,26 @@
 1. show results from logistic and MSE (SGD, GD and normal equations) on 5000 samples report mean and variance of cross validation 5 fold, show graph of mean testing accuracy vs iteration (5000): [MSE(normal) : mean = 0.75, std = 0.009879271228182784] 
 2. Adaptive step size parce que the step size changes with the size of the training data, show accuracy converges for 500 iters
-3. Feature engineering (compare with previous step)
+3. Feature engineering (compare with previous step):
+* Try to:
+    1) remove all the rows undefined for DER_mass_MMC;
+    2) Ignore entirely:
+      x 5  MV 'DER_deltaeta_jet_jet',
+      x 6  MV~68% 'DER_mass_jet_jet',
+      x 7  MV 'DER_prodeta_jet_jet',
+      x 12 'DER_met_phi_centrality',
+      x 13 MV 'DER_lep_eta_centrality',
+      x 16 'PRI_tau_phi',
+      x 19 'PRI_lep_phi',
+      x 21 'PRI_met_phi',
+      x 25 MV 'PRI_jet_leading_eta',
+      x 26 MV 'PRI_jet_leading_phi',
+      x 27 MV~68% 'PRI_jet_subleading_pt',  undef PRI jet num≤1
+      x 28 MV 'PRI_jet_subleading_eta',
+      x 29 MV 'PRI_jet_subleading_phi',
+      x 30 MV~68% 'PRI_jet_all_pt'
+    3) Fill in missing values w/ mean (¯\_(ツ)_/¯):
+      24 MV~35% 'PRI_jet_leading_pt', undef if PRI jet num=0
+      
 4. Choose the best features 
 5. Compare stochastic: time/complexity
 6. Higher order estimations, adding more features comme x**2, x**3 on peux montrer un escalation en accuracy (mean, variance Mais en francaise)
