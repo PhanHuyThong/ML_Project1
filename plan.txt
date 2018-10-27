@@ -1,4 +1,4 @@
-1. show results from logistic and MSE (SGD, GD and normal equations) on 5000 samples report mean and variance of cross validation 5 fold, show graph of mean testing accuracy vs iteration (5000)
+1. show results from logistic and MSE (SGD, GD and normal equations) on 5000 samples report mean and variance of cross validation 5 fold, show graph of mean testing accuracy vs iteration (5000): [MSE(normal) : mean = 0.75, std = 0.009879271228182784] 
 2. Adaptive step size parce que the step size changes with the size of the training data, show accuracy converges for 500 iters
 3. Feature engineering (compare with previous step)
 4. Choose the best features 
