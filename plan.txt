@@ -24,7 +24,7 @@
 4. Choose the best features 
 5. Compare stochastic: time/complexity
 6. Higher order estimations, adding more features comme x**2, x**3 on peux montrer un escalation en accuracy (mean, variance Mais en francaise)
-7. Regularization, feature selection by L1? Compare L1 and L2, show the good graphs
+7. Regularization, feature selection by L1?
 8. run the best settings with full train.csv and submit :D
 
 We can do it guys!
